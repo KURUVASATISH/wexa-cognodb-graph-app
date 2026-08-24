@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>CareerGraph</title>
+
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+
+    <div class="app-shell">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <div class="brand">
+                <div class="brand-mark">◆</div>
+
+                <div>
+                    <h1>CareerGraph</h1>
+                    <span>Graph Intelligence</span>
+                </div>
+            </div>
+
+            <nav class="navigation">
+                <a class="nav-item active" href="#">
+                    <span>⌂</span>
+                    Overview
+                </a>
+
+                <a class="nav-item" href="#skills">
+                    <span>✦</span>
+                    Skills
+                </a>
+
+                <a class="nav-item" href="#jobs">
+                    <span>↗</span>
+                    Opportunities
+                </a>
+
+                <a class="nav-item" href="#technologies">
+                    <span>◇</span>
+                    Technologies
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <span class="status-dot"></span>
+                CognoDB connected
+            </div>
+
+        </aside>
+
+
+        <!-- Main content -->
+        <main class="main-content">
+
+            <!-- Header -->
+            <header class="topbar">
+
+                <div>
+                    <p class="eyebrow">CAREER INTELLIGENCE</p>
+
+                    <h2>
+                        Explore your professional graph.
+                    </h2>
+
+                    <p class="subtitle">
+                        Discover how your skills connect to projects,
+                        technologies and opportunities.
+                    </p>
+                </div>
+
+                <div class="connection-status">
+                    <span class="status-dot"></span>
+                    Live
+                </div>
+
+            </header>
+
+
+            <!-- Person selector -->
+            <section class="person-selector">
+
+                <div>
+                    <span class="section-label">
+                        CURRENT PROFILE
+                    </span>
+
+                    <h3 id="person-name">
+                        Loading...
+                    </h3>
+
+                    <p id="person-role">
+                        Loading profile
+                    </p>
+                </div>
+
+                <div class="selector-wrapper">
+                    <label for="person-select">
+                        Profile
+                    </label>
+
+                    <select id="person-select">
+                        <option value="P001">
+                            Rahul Sharma
+                        </option>
+                    </select>
+                </div>
+
+            </section>
+
+
+            <!-- Stats -->
+            <section class="stats-grid">
+
+                <div class="stat-card">
+                    <span class="stat-label">
+                        SKILLS
+                    </span>
+
+                    <strong id="skill-count">—</strong>
+
+                    <span class="stat-description">
+                        Professional capabilities
+                    </span>
+                </div>
+
+                <div class="stat-card">
+                    <span class="stat-label">
+                        PROJECTS
+                    </span>
+
+                    <strong id="project-count">—</strong>
+
+                    <span class="stat-description">
+                        Projects represented
+                    </span>
+                </div>
+
+                <div class="stat-card">
+                    <span class="stat-label">
+                        TECHNOLOGIES
+                    </span>
+
+                    <strong id="technology-count">—</strong>
+
+                    <span class="stat-description">
+                        Tools & platforms
+                    </span>
+                </div>
+
+                <div class="stat-card highlight">
+                    <span class="stat-label">
+                        TOP MATCH
+                    </span>
+
+                    <strong id="top-match">—</strong>
+
+                    <span class="stat-description">
+                        Best opportunity
+                    </span>
+                </div>
+
+            </section>
+
+
+            <!-- Skills + Technologies -->
+            <section class="content-grid">
+
+                <div class="panel" id="skills">
+
+                    <div class="panel-header">
+                        <div>
+                            <span class="section-label">
+                                CAPABILITIES
+                            </span>
+
+                            <h3>Your skills</h3>
+                        </div>
+                    </div>
+
+                    <div
+                        id="skills-container"
+                        class="skills-container"
+                    >
+                        <div class="loading">
+                            Loading skills...
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="panel" id="technologies">
+
+                    <div class="panel-header">
+                        <div>
+                            <span class="section-label">
+                                TECHNOLOGY GRAPH
+                            </span>
+
+                            <h3>Technologies</h3>
+                        </div>
+                    </div>
+
+                    <div
+                        id="technologies-container"
+                        class="technology-list"
+                    >
+                        <div class="loading">
+                            Loading technologies...
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+<section class="panel graph-panel">
+
+    <div class="panel-header">
+
+        <div>
+            <div class="section-label">
+                Relationship Graph
+            </div>
+
+            <h3>Explore the network</h3>
+
+            <p>
+                See how people, skills, projects and technologies
+                connect inside the graph database.
+            </p>
+        </div>
+
+        <div class="recommendation-badge">
+            Live graph
+        </div>
+
+    </div>
+
+    <div
+        id="graph-container"
+        class="graph-container"
+    >
+
+        <div class="loading">
+            Loading graph...
+        </div>
+
+    </div>
+
+</section>
+
+            <!-- Job recommendations -->
+            <section class="panel jobs-panel" id="jobs">
+
+                <div class="panel-header">
+
+                    <div>
+                        <span class="section-label">
+                            GRAPH-BASED MATCHING
+                        </span>
+
+                        <h3>
+                            Recommended opportunities
+                        </h3>
+
+                        <p>
+                            Jobs ranked by the skills you already have.
+                        </p>
+                    </div>
+
+                    <div class="recommendation-badge">
+                        AI-assisted
+                    </div>
+
+                </div>
+
+                <div id="jobs-container">
+                    <div class="loading">
+                        Finding opportunities...
+                    </div>
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="/app.js"></script>
+
+</body>
+</html>
