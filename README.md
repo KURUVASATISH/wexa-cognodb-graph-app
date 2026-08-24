@@ -7,7 +7,7 @@ The application demonstrates how a graph database can model relationships betwee
 ## Live Demo
 
 **Live Application:**  
-https://YOUR-RENDER-URL.onrender.com
+https://wexa-cognodb-graph-app-qsyf.onrender.com/
 
 **GitHub Repository:**  
 https://github.com/KURUVASATISH/wexa-cognodb-graph-app
